@@ -27,8 +27,8 @@ calc.sum();
 calc.sub();
 calc.plus();
 calc.split();
-
 */
+
 const app = document.querySelector('#app');
 const calculadora = new calculator();
 
