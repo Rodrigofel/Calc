@@ -7,10 +7,10 @@ export class calculator {
   }
   sum(a, b) {
     if (this.a != undefined && this.b != undefined)
-      if (this.a != null || this.b != null) return console.log(this.a + this.b);
+      if (this.a != null || this.b != null) return Number(this.a + this.b);
     if (a == null || b == null)
       return console.error('Não há valores para calcular');
-    return console.log(a + b);
+    return a + b;
   }
 
   sub(a, b) {
@@ -18,7 +18,7 @@ export class calculator {
       if (this.a != null || this.b != null) return console.log(this.a - this.b);
     if (a == null || b == null)
       return console.error('Não há valores para calcular');
-    return console.log(a - b);
+    return a - b;
   }
 
   plus(a, b) {
@@ -26,19 +26,19 @@ export class calculator {
       if (this.a != null || this.b != null) return console.log(this.a * this.b);
     if (a == null || b == null)
       return console.error('Não há valores para calcular');
-    return console.log(a * b);
+    return a * b;
   }
 
   split(a, b) {
     if (this.a != undefined && this.b != undefined) {
       if (this.a != null || this.b != null)
         if (Number(this.b) == 0) return console.error('Invalid Number');
-      return console.log(this.a / this.b);
+      return this.a / this.b;
     }
     if (a == null || b == null)
       return console.log('Não há valores para calcular');
     if (Number(b) == 0) return console.error('Invalid Number');
-    return console.log(a / b);
+    return a / b;
   }
 }
 
