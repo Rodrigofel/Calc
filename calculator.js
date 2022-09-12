@@ -10,7 +10,7 @@ export class calculator {
       if (this.a != null || this.b != null) return Number(this.a + this.b);
     if (a == null || b == null)
       return console.error('Não há valores para calcular');
-    return a + b;
+    return Number(a) + Number(b);
   }
 
   sub(a, b) {
